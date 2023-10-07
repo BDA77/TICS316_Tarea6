@@ -1,28 +1,22 @@
 import React from 'react';
-import CBoreas from './CBoreas';
-import CEmilio from './CEmilio';
-import CJaviera from './CJaviera';
-import FotoEmilio from './img/Foto Suazo.jpeg';
-import FotoBoreas from './img/Foto Boreas.jpeg';
-import FotoJavi from "./img/Foto Javi.jpeg";
 
 const PersonalInfo = [{
-  name: "Boreas",
-  url:"/",
+  name: "Boreas Duchens",
+  url:"#",
   mail: 'bduchens@alumnos.uai.cl',
-  imgSrc: {FotoBoreas}
+  imgSrc: "/Foto Boreas.jpeg"
 },
 {
-  name: "Javiera",
-  url:"/",
+  name: "Javiera Marín",
+  url:"#",
   mail: 'javiemarin@alumnos.uai.cl',
-  imgSrc: {FotoJavi}
+  imgSrc: "/Foto Javi.jpeg"
 },
 {
-  name: "Emilio",
-  url:"/",
+  name: "Emilio Suazo",
+  url:"#",
   mail: 'emsuazo@alumnos.uai.cl',
-  imgSrc: {FotoEmilio}
+  imgSrc: "/Foto Suazo.jpeg"
 },
 ];
 
@@ -32,9 +26,9 @@ function Nosotros() {
     <main className="content">
       <h2 className="subtitle">¡Conócenos haciendo click en nuestra foto!</h2>
       <div className="subjects">
-        <CBoreas />
-        <CJaviera />
-        <CEmilio />
+      <Integrante props = {PersonalInfo[0]}/>
+      <Integrante props = {PersonalInfo[1]}/>
+      <Integrante props = {PersonalInfo[2]}/>     
       </div>
     </main>
   );
@@ -55,4 +49,3 @@ console.log(PersonalInfo[0])
 }
 
 export default Nosotros;
-
