@@ -1,0 +1,237 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary: #0799bd;
+  --secondary: #9cd2d3;
+  --light: #f2e6cf;
+  --dark: rgb(17, 76, 95);
+  --background: rgba(17, 76, 95, 0.1);
+  --primaryfont: Arial, Helvetica, sans-serif;
+  --secondaryfont: 'Roboto', sans-serif;
+  --terciaryfont: 'Poiret One', cursive;
+}
+
+body, header, footer {
+  background-color: var(--white); 
+}
+
+body {
+  font-family: var(--primaryfont);
+  background-image: rgba(255,255,255,1)
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  color: var(--black);
+  text-align: center;
+  font-weight: 600;
+  font-family: var(--secondaryfont);
+}
+
+.title span {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.nav {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-evenly;
+  font-family: var(--secondaryfont);    
+}
+
+.nav a {
+  color: var(--white);
+  font-weight: 300;
+  padding: 10px;
+  border-radius: 7px;
+  position: relative;
+  display: flex; /* Alineación vertical de contenido */
+  align-items: center; /* Centra verticalmente */
+}
+
+.nav a:hover {
+  background-color: var(--secondary);
+}
+
+
+.submenu {
+  position: relative;
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--primary);
+  width: 100%;
+  z-index: 1;
+}
+
+.submenu:hover .submenu-content {
+  display: block;
+}
+
+.submenu-content a {
+  color: var(--white);
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero {
+  margin: 2%;
+  font-family: var(--secondaryfont);
+  color: var(--black);    
+}
+
+.subtitle {
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  background-color: var(--secondary);
+  border-radius: 15px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.subjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7%;
+}
+
+.subject {
+  color: var(--white);
+  background-color: var(--primary);
+  text-align: center;
+  font-family: var(--secondaryfont);
+  border-radius: 5px;
+}
+
+.subject img {
+  max-width: 85%; /* Ajusta el ancho máximo de la imagen al contenedor */
+  height: 375px; /* Mantiene la proporción de la imagen */
+  object-fit: cover;
+  display: block; /* Elimina el espacio extra debajo de la imagen */
+  margin: 20px auto 20px; /* Centra la imagen y agrega espacio debajo */
+  border-radius: 5px;
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+}
+
+.goal {
+  background-color: var(--dark);
+  padding: 20px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.mail {
+  color: var(--white);
+}
+
+.footer {
+  font-family: var(--primaryfont);
+  color: var(--black);
+  margin: 1%;
+  font-size: small;
+  text-align: center;
+}
+
+.person {
+  margin: 2%;
+  font-family: var(--secondaryfont);
+  color: var(--black);  
+}
+
+/* .person h2 {
+  background-color: var(--light);
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+} */
+
+.personal-info {
+  background-color: var(--white);
+  display: flex;
+  height: 450px;
+  font-family: var(--terciaryfont);
+}
+
+.personal-info img {
+  width: 35%;
+  object-fit: cover;
+}
+
+.personal-info h2 {
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.personal-info p {
+  font-weight: bold;
+}
+
+.info-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pasatiempos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Margen superior e inferior del contenedor */
+}
+
+.pasatiempo {
+  background-color: var(--dark);
+  padding: 10px;
+  margin: 5px; /* Margen entre los pasatiempos */
+  border-radius: 5px;
+  flex: 1; /* distribuye el espacio eq */
+  text-align: center;
+  color: white;
+/*     height: 175px; */
+}
